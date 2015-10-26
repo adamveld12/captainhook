@@ -1,0 +1,20 @@
+@primary: #00BCD4;
+@primary_dark: darken(@primary, 8.2%); //#0097A7;
+@primary_light: lighten(@primary, 8.2%); //#B2EBF2;
+@accent: #FF5722;
+
+@text: #FFFFFF; // white
+@text_primary: #212121; // black
+@text_secondary: #727272; // gray
+
+@divider: #B6B6B6;
+
+@background: #F5F8FA; //a really soft white-blue
+
+.transition(@prop; @time: .5s; @curve: ease){
+  -o-transition: @prop @time @curve;
+  -moz-transition: @prop @time @curve;
+  -webkit-transition: @prop @time @curve;
+  transition: @prop @time @curve;
+}
+

@@ -1,0 +1,64 @@
+@import './util.less';
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:800,500,400,100);
+
+body, html, #win {
+  width: 100%;
+  height: 100%;
+  background-color: @background;
+  margin: 0;
+  padding: 0;
+}
+
+.browserupgrade {
+  min-height: 30px;
+  background: @primary;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0 0 0;
+  color: @text;
+  box-shadow: 0 0 5px black;
+}
+
+#main {
+  margin: 35px 45px;
+
+  border-left: 2px @divider solid;
+
+  .siteHeader {
+    text-transform: uppercase;
+    padding: 10px 0 15px 20px;
+    border-bottom: 2px @divider solid;
+
+    h1 {
+      margin: 0;
+      font-weight: 800;
+      .thin {
+        font-weight: 100;
+        margin-right: 10px;
+      }
+      .main_icon {
+        font-size: 32px !important;
+      }
+    }
+  }
+  
+  .content {
+    margin: 20px 0 0 20px;
+  }
+
+  .mainFooter {
+    z-index: 100;
+    box-shadow: 0 0 5px @divider;
+    background-color: @primary;
+    color: @text;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 25px;
+    text-align: center;
+    padding: 10px 5px;
+  }
+}
