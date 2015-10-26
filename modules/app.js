@@ -29,7 +29,7 @@ class App extends React.Component {
           { this.props.children }
         </section>
         <footer className="mainFooter">
-          Made with &hearts; by CloudHouse
+          Made with &hearts;
         </footer>
       </section>
     );

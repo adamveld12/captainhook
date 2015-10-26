@@ -1,11 +1,15 @@
 'use strict';
 
 import React from 'react';
-import AceEditor from 'react-ace';
 
+import AceEditor from 'react-ace';
 import Brace from 'brace';
 import 'brace/mode/java';
 import 'brace/theme/github';
+
+
+import { FlatButton } from 'material-ui';
+
 
 import './style.less';
 
@@ -30,7 +34,9 @@ export default class CreateHook extends React.Component {
                     mode="javascript"
                     theme="github"
                     value={code} />
-        <button>Run</button>
+        <section className="controls">
+          <FlatButton label="RUN" primary={true} />
+        </section>
       </section>
     );
   }
